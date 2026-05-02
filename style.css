@@ -1,0 +1,18 @@
+.animate-logos {
+  display: flex;
+  width: max-content;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .animate-logos img {
+    height: 32px; /* بدل 40px */
+  }
+}

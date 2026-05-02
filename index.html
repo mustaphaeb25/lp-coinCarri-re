@@ -3,6 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
     <title>Recrutez en Logistique & E-commerce Au Maroc | CoinCarrière</title>
     <meta name="description" content="Trouvez des candidats vérifiés et prêts à interviewer. Processus en 4 étapes. Gratuit pour commencer.">
     <meta property="og:title" content="Recrutez en Logistique & E-commerce Au Maroc | CoinCarrière">
@@ -16,6 +32,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+    </script>
     <script>
         tailwind.config = {
             theme: {
@@ -43,7 +63,7 @@
     <style>
         body { font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif; }
         .gradient-hero { background: linear-gradient(135deg, #023E5F 0%, #004E78 100%); }
-        .animate-logos { animation: scroll 30s linear infinite; }
+        .animate-logos { animation: scroll 45s linear infinite; }
         @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
         .hover-pause:hover .animate-logos { animation-play-state: paused; }
         
@@ -114,7 +134,6 @@
     -->
     <section class="gradient-hero min-h-screen flex items-center relative overflow-hidden pt-16 hero-gradient-animate">
         <div class="absolute inset-0">
-            <img src="hero.jpeg" alt="" class="w-full h-full object-cover opacity-10"/>
             <div class="absolute inset-0 bg-gradient-to-r from-primary-900/95 to-primary-800/90"></div>
         </div>
         
@@ -158,11 +177,13 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
+
+
 
 <!-- ============================================
-         PROBLEM/PAIN SECTION — Agitate before solving
-         ============================================ -->
+     PROBLEM/PAIN SECTION — Agitate before solving
+     ============================================ -->
     <section class="py-20 bg-primary-900 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
             <div class="absolute top-0 left-0 w-96 h-96 bg-primary-500 rounded-full filter blur-3xl"></div>
@@ -606,10 +627,7 @@
         </div>
     </section>
 
-    <!-- ============================================
-         VIDÉO / CRÉATIVE
-         ============================================
-    -->
+   
     
     <!-- ============================================
          OBJECTIONS — FAQ
@@ -706,6 +724,8 @@
                 <img src="img_0.png" alt="CoinCarrière" class="h-12"/>
                 <div class="flex flex-wrap items-center justify-center gap-8 text-primary-600 text-sm">
                     <a href="https://coincarriere.com/register?type=company" class="hover:text-primary-900 font-medium transition-all">S'inscrire</a>
+                    <a href="https://coincarriere.com/fr/privacy" class="hover:text-primary-900 font-medium transition-all">Confidentialite</a>
+                    <a href="https://coincarriere.com/fr/terms" class="hover:text-primary-900 font-medium transition-all">Conditions</a>
                 
                     <a href="https://coincarriere.com/fr/contact" class="hover:text-primary-900 font-medium transition-all">Contact</a>
                 </div>
